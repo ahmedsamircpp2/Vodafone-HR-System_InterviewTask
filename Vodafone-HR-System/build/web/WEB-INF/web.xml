@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>AddEmployee</servlet-name>
+        <servlet-class>com.vodafone.controller.servlets.AddEmployee</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteEmployee</servlet-name>
+        <servlet-class>com.vodafone.controller.servlets.DeleteEmployee</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateEmployee</servlet-name>
+        <servlet-class>com.vodafone.controller.servlets.UpdateEmployee</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddEmployee</servlet-name>
+        <url-pattern>/AddEmployee</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteEmployee</servlet-name>
+        <url-pattern>/DeleteEmployee</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateEmployee</servlet-name>
+        <url-pattern>/UpdateEmployee</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
